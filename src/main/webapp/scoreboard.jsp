@@ -68,6 +68,11 @@
 			<!-- start content -->
 				<div id="badData"></div>
 				<% if(canSeeScoreboard) { %>
+					<div id="whereistand-div" style="position: fixed; left:30px; display: hidden;">
+						<a href="#userbar-<%= ses.getAttribute("userStamp").toString() %>" style="text-decoration: none;">
+							<div class="menuButton">Where I stand?</div>
+						</a>
+					</div>
 					<ul id="leaderboard" class="leaderboard"></ul>
 				<% } else { %>
 					<p>Scoreboard is not currently available!</p>
@@ -173,6 +178,12 @@
 									}
 								}
 								sort();
+								
+								// Show/hide Where I stand button
+								if ( o.length <= 20 )
+									$("#whereistand-div").hide();
+								else
+									$("#whereistand-div").show();
 							}
 						});	
 						var fullResponse = new String(ajaxCall.responseText);
