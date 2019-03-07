@@ -11,6 +11,8 @@ You can download Security Shepherd VM's or Manual Installation Packs from [GitHu
 
 ### Docker (Ubuntu Linux Host)
 
+# alfasin: I'm using "Ubuntu Server 18.04 LTS (HVM), SSD Volume Type" AMI in AWS which requires typing a few additional commends, here's the 'fixed' version:
+
 #### Initial Setup
 ```console
 # Install pre-reqs
