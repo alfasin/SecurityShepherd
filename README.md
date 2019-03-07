@@ -22,6 +22,10 @@ git clone https://github.com/OWASP/SecurityShepherd.git
 # Change directory into the local copy of the repository
 cd SecurityShepherd
 
+# add user docker
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+
 # Adds current user to the docker group (don't have to run docker with sudo)
 sudo gpasswd -a $USER docker
 
