@@ -24,10 +24,15 @@ cd SecurityShepherd
 
 # add user docker
 sudo groupadd docker
-sudo gpasswd -a $USER docker
 
 # Adds current user to the docker group (don't have to run docker with sudo)
 sudo gpasswd -a $USER docker
+
+# install mvn
+sudo apt-get install software-properties-common
+sudo apt-add-repository universe
+sudo apt-get update
+sudo apt-get install maven
 
 # Run maven to generate the WAR and HTTPS Cert.
 mvn -Pdocker clean install -DskipTests
