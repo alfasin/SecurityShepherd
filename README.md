@@ -37,6 +37,9 @@ sudo apt-get install maven
 # Run maven to generate the WAR and HTTPS Cert.
 mvn -Pdocker clean install -DskipTests
 
+# install docker-compose
+sudo apt  install docker-compose
+
 # Build the docker images, docker network and bring up the environment
 docker-compose up
 ```
