@@ -42,6 +42,9 @@ sudo apt  install docker-compose
 
 # Build the docker images, docker network and bring up the environment
 docker-compose up
+
+# if you're getting the error: "ERROR: Couldn't connect to Docker daemon at http+docker://localunixsocket - is it running?"
+sudo docker-compose up
 ```
 
 Open up an Internet Browser & type in the address bar;
