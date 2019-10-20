@@ -16,6 +16,9 @@ I'm using "Ubuntu Server 18.04 LTS (HVM), SSD Volume Type" AMI (ID: ami-0bbe6b35
 
 #### Initial Setup
 ```console
+# Update apt
+sudo apt update
+
 # Install pre-reqs
 sudo apt install git maven docker docker-compose default-jdk
 
